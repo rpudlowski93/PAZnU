@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make a Drink</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="./../css/font-awesome.min.css" rel="stylesheet">
+    <link href="./../css/bootstrap.min.css" rel="stylesheet">
+    <link href="./../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="./../css/flexslider.css" rel="stylesheet">
+    <link href="./../css/templatemo-style.css" rel="stylesheet">
+    <link href="./../css/modified.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="tm-gray-bg">
+<header class="tm-header">
+    <div class="row">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-2 col-md-3 col-sm-2 tm-site-name-container">
+            <a href="./../index.html" class="tm-site-name">Make a Drink</a>
+        </div>
+        <div class="mobile-menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-9">
+            <nav class="tm-nav">
+                <ul>
+                    <li><a href="./../index.html">Strona Główna</a></li>
+                    <li><a href="przepisy.html">Przepisy</a></li>
+                    <li><a href="poczekalnia.html">Poczekalnia</a></li>
+                    <li><a href="#" class="active">Dodaj przepis</a></li>
+                    <li id="loginPara"><a href="login.html">Zaloguj</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="section-margin-top">
+    <div class="row firstRow">
+        <div class="drinkMainBox col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
+            <div class="row">
+                <div class="tm-section-header">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <hr>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">Dodaj Przepis</h2></div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row secondRow">
+                <div class="row">
+                    <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6 col-md-6 col-sm-6">
+                        <form action="przepisDodany.html" id="addReceipeForm">
+                            <center><button class="btn btn-primary">Dodaj przepis</button></center>
+                            <div class="form-group">
+                                <label for="name">Nazwa drinka:</label>
+                                <input type="text" class="form-control input-sm" id="name" required="true" placeholder="Wpisz nazwę drinka">
+                            </div>
+                            <div class="form-group">
+                                <label for="price">Szacunkowy koszt wykonania:</label>
+                                <input type="text" class="form-control input-sm" id="price" required="true" placeholder="Wpisz szacunkowy koszt drinka">
+                            </div>
+                            <div class="form-group">
+                                <label for="descr">Opis Wykonania:</label>
+                                <textarea class="form-control" rows="5" id="descr" required="true" placeholder="Dodaj opis drinka"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="button">Dodaj zdjęcie</button>
+                            </div>
+                        </form>
+                        <center><form class="form-inline" action="#" id="addIngredForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="drink" placeholder="Dodaj składnik" required="true" >
+                            </div>
+                            <button class="btn btn-primary">Dodaj składnik</button>
+                        </form></center>
+                        <br />
+                        <center><div class="ingredients">
+                            <span class="singleIngredient">pomidor <i class="fas fa-times-circle"></i></span>
+                            <span class="singleIngredient">cola <i class="fas fa-times-circle"></i></span>
+                            <span class="singleIngredient">rum <i class="fas fa-times-circle"></i></span>
+                            <span class="singleIngredient">cytryna <i class="fas fa-times-circle"></i></span>
+                            <span class="singleIngredient">malibu <i class="fas fa-times-circle"></i></span>
+                        </div></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="tm-black-bg">
+    <div class="container">
+        <div class="row">
+            <p class="tm-copyright-text">Copyright &copy; 2018 Make a Drink</p>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="./../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="./../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./../js/templatemo-script.js"></script>
+</body>
+</html>

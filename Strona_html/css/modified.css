@@ -26,7 +26,7 @@
 }
 
 .tm-details-1 {
-  padding: 10px 25px;
+  padding: 4%;
 }
 
 .tm-home-box-2-description{
@@ -36,3 +36,48 @@
 #hotelCarTabs {
 	border-bottom: none;
 	height: auto;
+}
+
+.drinkMainBox {
+	border: 0.2rem solid #818485;
+	padding: 2%;
+	background-color: #f9f9f9;
+}
+
+.singleDrink {
+	border: 0.3rem solid #818485;
+	padding: 0.1%;
+}
+
+.singleDrink p{
+	padding: 4%;
+	text-align: left;
+}
+
+.singleDrink .center, .singleDrink h3{
+	text-align: center;
+}
+#loginPara {
+	float: right;
+}
+.firstRow {
+	padding-top: 2%;
+}
+.secondRow {
+	padding-top: 3%;
+}
+@media screen and (max-width: 800px) {
+	#loginPara {
+		float: left;
+	}
+}
+.ingredients {
+    display: inline;
+}
+.ingredients span {
+    padding-right: 1%;
+}
+.acceptation {
+	text-align: center;
+	padding-top: 20%;
+}
