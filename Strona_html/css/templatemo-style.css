@@ -284,6 +284,10 @@ body {
 /* Footer */
 .tm-black-bg {
 	background-color: #2D2D2D;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .tm-copyright-text {
 	color: white;
