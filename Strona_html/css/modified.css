@@ -1,5 +1,5 @@
 .tm-nav li a {
-	color: #838383;
+	color: #b7b7b7;
 	display: block;
 	padding: 45px 15px 15px 15px;
 	text-transform: uppercase;
@@ -18,11 +18,11 @@
 }
 
 .tm-drink-icon-1 {
-  padding: 10px 10px;
+  padding: 2% 2%;
 }
 .icon-container {
-  width: 60px;
-  height: 60px;
+  width: 6%;
+  height: 6%;
 }
 
 .tm-details-1 {
@@ -30,7 +30,7 @@
 }
 
 .tm-home-box-2-description{
-  padding: 20px;
+  float: left;
 }
 
 #hotelCarTabs {
@@ -39,13 +39,12 @@
 }
 
 .drinkMainBox {
-	border: 0.2rem solid #818485;
 	padding: 2%;
 	background-color: #f9f9f9;
 }
 
 .singleDrink {
-	border: 0.3rem solid #818485;
+
 	padding: 0.1%;
 }
 
@@ -57,11 +56,10 @@
 .singleDrink .center, .singleDrink h3{
 	text-align: center;
 }
-#loginPara {
-	float: right;
 }
 .firstRow {
 	padding-top: 2%;
+  padding-bottom: 2%;
 }
 .secondRow {
 	padding-top: 3%;
@@ -80,4 +78,14 @@
 .acceptation {
 	text-align: center;
 	padding-top: 20%;
+}
+.navbar-right {
+  padding-right: 1%;
+}
+.page-margin-bottom {
+  padding-bottom: 5%;
+}
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #F9E58B;
 }

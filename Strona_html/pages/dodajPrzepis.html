@@ -35,7 +35,9 @@
                     <li><a href="przepisy.html">Przepisy</a></li>
                     <li><a href="poczekalnia.html">Poczekalnia</a></li>
                     <li><a href="#" class="active">Dodaj przepis</a></li>
-                    <li id="loginPara"><a href="login.html">Zaloguj</a></li>
+                </ul>
+                <ul class="navbar-right">
+                    <li><a href="login.html">Zaloguj</a></li>
                 </ul>
             </nav>
         </div>
@@ -57,45 +59,84 @@
             </div>
             <div class="row secondRow">
                 <div class="row">
-                    <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6 col-md-6 col-sm-6">
+                    <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <form action="przepisDodany.html" id="addReceipeForm">
-                            <center><button class="btn btn-primary">Dodaj przepis</button></center>
                             <div class="form-group">
                                 <label for="name">Nazwa drinka:</label>
-                                <input type="text" class="form-control input-sm" id="name" required="true" placeholder="Wpisz nazwę drinka">
+                                <input type="text" class="form-control" id="name" required="true" placeholder="Wpisz nazwę drinka">
+                            </div>
+                            <div class="form-group">
+                                <label for="power">Moc drinka:</label>
+                                  <select class="form-control" id="power" required="true">
+                                    <option>Mocny</option>
+                                    <option>Średni</option>
+                                    <option>Słaby</option>
+                                  </select>
                             </div>
                             <div class="form-group">
                                 <label for="price">Szacunkowy koszt wykonania:</label>
-                                <input type="text" class="form-control input-sm" id="price" required="true" placeholder="Wpisz szacunkowy koszt drinka">
+                                <input type="text" class="form-control" id="price" required="true" placeholder="Wpisz szacunkowy koszt drinka">
                             </div>
                             <div class="form-group">
                                 <label for="descr">Opis Wykonania:</label>
                                 <textarea class="form-control" rows="5" id="descr" required="true" placeholder="Dodaj opis drinka"></textarea>
                             </div>
                             <div class="form-group">
-                                <button class="btn btn-primary" type="button">Dodaj zdjęcie</button>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                      <br /><h3>Alkohol</h3><br />
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="gin">Gin</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="gin"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="beer">Piwo</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="beer"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="rum">Rum</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="rum"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="tequila">Tequila</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="tequila"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="whisky">Whisky</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="whisky"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="vodka">Wódka</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="vodka"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><input type="text" class="form-control" id="otherAlcoholName" placeholder="Inny"></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="otherAlcohol"></div></div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                      <br /><h3>Napój</h3><br />
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="cola">Cola</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="cola"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="grapefruit">Sok grejfrutowy</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="grapefruit"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="limon">Sok limonkowy</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="limon"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="orange">Sok pomarańczowy</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="orange"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="cranberry">Sok żurawinowy</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="cranberry"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="tonic">Tonik</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="tonic"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><input type="text" class="form-control" id="otherDrinkName" placeholder="Inny"></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="otherDrink"></div></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                      <br /><h3>Dodatki</h3><br />
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="tomato">Pomidor</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="tomato"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="ice">Lód</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="ice"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="mint">Mięta</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="mint"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="pineappe">Ananas</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="pineapple"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="strawberry">Truskawki</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="strawberry"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="cinamon">Cynamon</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="cinamon"></div></div>
+                                        <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><input type="text" class="form-control" id="otherAddonlName" placeholder="Inny"></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="otherAddon"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                              <div class="row">
+                                  <div class="col">
+                                    <br /><h3>Dodaj zdjęcie</h3><br />
+                                      <input type="file" name="pic" accept="image/*">
+                                  </div>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <center><button class="btn tm-submit-btn">Dodaj przepis</button></center>
                             </div>
                         </form>
-                        <center><form class="form-inline" action="#" id="addIngredForm">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="drink" placeholder="Dodaj składnik" required="true" >
-                            </div>
-                            <button class="btn btn-primary">Dodaj składnik</button>
-                        </form></center>
-                        <br />
-                        <center><div class="ingredients">
-                            <span class="singleIngredient">pomidor <i class="fas fa-times-circle"></i></span>
-                            <span class="singleIngredient">cola <i class="fas fa-times-circle"></i></span>
-                            <span class="singleIngredient">rum <i class="fas fa-times-circle"></i></span>
-                            <span class="singleIngredient">cytryna <i class="fas fa-times-circle"></i></span>
-                            <span class="singleIngredient">malibu <i class="fas fa-times-circle"></i></span>
-                        </div></center>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<div class="page-margin-bottom"></div>
 <footer class="tm-black-bg">
     <div class="container">
         <div class="row">

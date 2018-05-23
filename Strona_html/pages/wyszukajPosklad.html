@@ -35,7 +35,9 @@
                     <li><a href="przepisy.html" class="active">Przepisy</a></li>
                     <li><a href="poczekalnia.html">Poczekalnia</a></li>
                     <li><a href="dodajPrzepis.html">Dodaj przepis</a></li>
-                    <li id="loginPara"><a href="login.html">Zaloguj</a></li>
+                </ul>
+                <ul class="navbar-right">
+                    <li><a href="login.html">Zaloguj</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,38 +48,60 @@
         <div class="drinkMainBox col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
             <div class="row">
                 <div class="tm-section-header">
-                    <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         <hr>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">Wyszukaj przepisy</h2></div>
-                    <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6"><h2 class="tm-section-title">Wyszukaj przepisy</h2></div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         <hr>
                     </div>
                 </div>
             </div>
-            <div class="row secondRow">
-                <center><form class="form-inline" action="#" id="addIngredForm">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="drink" placeholder="Dodaj składnik" required="true" size="33">
+            <div class="row secondRow center-block">
+                <div class="col">
+                <div class="form-group">
+                    <div class="row firstRow">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-offset-2">
+                          <br /><h3>Alkohol</h3><br />
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="gin">Gin</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="gin"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="beer">Piwo</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="beer"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="rum">Rum</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="rum"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="tequila">Tequila</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="tequila"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="whisky">Whisky</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="whisky"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="vodka">Wódka</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="vodka"></div></div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-offset-2">
+                          <br /><h3>Napój</h3><br />
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="cola">Cola</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="cola"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="grapefruit">Sok grejfrutowy</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="grapefruit"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="limon">Sok limonkowy</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="limon"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="orange">Sok pomarańczowy</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="orange"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="cranberry">Sok żurawinowy</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="cranberry"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="tonic">Tonik</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="tonic"></div></div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-offset-2">
+                          <br /><h3>Dodatki</h3><br />
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="tomato">Pomidor</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="tomato"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="ice">Lód</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="ice"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="mint">Mięta</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="mint"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="pineappe">Ananas</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="pineapple"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="strawberry">Truskawki</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="strawberry"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="cinamon">Cynamon</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="cinamon"></div></div>
+                        </div>
                     </div>
-                    <button class="btn btn-primary">Dodaj składnik</button>
-                </form></center>
-                <br />
-                <center><div class="ingredients">
-                    <span class="singleIngredient">pomidor <i class="fas fa-times-circle"></i></span>
-                    <span class="singleIngredient">cola <i class="fas fa-times-circle"></i></span>
-                    <span class="singleIngredient">rum <i class="fas fa-times-circle"></i></span>
-                    <span class="singleIngredient">cytryna <i class="fas fa-times-circle"></i></span>
-                    <span class="singleIngredient">malibu <i class="fas fa-times-circle"></i></span>
-                </div></center>
-                <br />
-                <center><div class="btn-group">
-                    <a href="./wynikiWyszukiwania.html"><button type="button" class="btn btn-primary">Pokaż wszystkie</button></a>
-                    <a href="./wynikiWyszukiwania.html"><button type="button" class="btn btn-primary">Wyszukaj</button></a>
-                    <a href="./przepisy.html"><button type="button" class="btn btn-primary">Wyszukaj według nazwy</button></a>
-                </div></center>
+                    <div class="row secondRow">
+                      <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6 col-md-6 col-sm-6">
+                        <a href="./wynikiWyszukiwania.html"><button type="button" class="btn btn-block tm-submit-btn">Wyszukaj</button></a>
+                      </div>
+                      <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6 col-md-6 col-sm-6">
+                        <a href="./wynikiWyszukiwania.html"><button type="button" class="btn tm-yellow-btn">Pokaż wszystkie</button></a>
+                        <a href="./przepisy.html"><button type="button" class="btn tm-yellow-btn">Wyszukaj według nazwy</button></a>
+                      </div>
+                    </div>
+              </div>
             </div>
         </div>
+      </div>
     </div>
 </section>
 <section class="section-margin-top">
@@ -85,11 +109,11 @@
         <div class="drinkMainBox col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
             <div class="row">
                 <div class="tm-section-header">
-                    <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                         <hr>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8"><h2 class="tm-section-title">Ostatnio wyszukiwane</h2></div>
-                    <div class="col-lg-2 col-md-2 col-sm-2">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"><h2 class="tm-section-title">Ostatnio wyszukiwane</h2></div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                         <hr>
                     </div>
                 </div>
@@ -100,17 +124,17 @@
                         <img src="./../img/index-03.jpg" alt="image" class="img-responsive">
                         <div class="tm-home-box-2-container">
                             <h3 class="margin-bottom-5">Sex on the beach</h3>
-                            <div class="col-lg-3 col-md-3 col-sm-3"><img src="./../img/drink-strong.png" alt="drink-strong" class="tm-details-1"></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3"><img src="./../img/drink-strong.png" data-toggle="tooltip" title="Mocny drink" alt="drink-strong" class="tm-details-1"></div>
                             <div class="col-lg-9 col-md-9 col-sm-"><p class="tm-details-1 margin-bottom center">Maciej Radom</p></div>
                         </div>
                         <img src="./../img/rating.png" alt="image" class="tm-details-1">
                         <p class="tm-details-1 margin-bottom">95 ocen</p>
                         <p class="tm-date">25.04.2018</p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link col-sm-8 justify-content-start"><span
+                            <a href="#" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
                                     class="tm-home-box-2-description">Sprawdź</span></a>
-                            <a href="#" class="tm-home-box-2-link col-sm-4 justify-content-end"><i
-                                    class="fa fa-comment tm-home-box-2-icon border-left"></i></a>
+                            <a href="#" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
+                                    class="fa fa-comment tm-home-box-2-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -119,17 +143,17 @@
                         <img src="./../img/index-06.jpg" alt="image" class="img-responsive">
                         <div class="tm-home-box-2-container">
                             <h3 class="margin-bottom-5">Margarita</h3>
-                            <div class="col-lg-3 col-md-3 col-sm-3"><img src="./../img/drink-medium.png" alt="drink-strong" class="tm-details-1"></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3"><img src="./../img/drink-medium.png" data-toggle="tooltip" title="Średni drink" alt="drink-medium" class="tm-details-1"></div>
                             <div class="col-lg-9 col-md-9 col-sm-"><p class="tm-details-1 margin-bottom center">Mateusz Kulik</p></div>
                         </div>
                         <img src="./../img/rating.png" alt="image" class="tm-details-1">
                         <p class="tm-details-1 margin-bottom">5 ocen</p>
                         <p class="tm-date">02.05.2018</p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link col-sm-8 justify-content-start"><span
+                            <a href="#" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
                                     class="tm-home-box-2-description">Sprawdź</span></a>
-                            <a href="#" class="tm-home-box-2-link col-sm-4 justify-content-end"><i
-                                    class="fa fa-comment tm-home-box-2-icon border-left"></i></a>
+                            <a href="#" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
+                                    class="fa fa-comment tm-home-box-2-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -138,17 +162,17 @@
                         <img src="./../img/index-04.jpg" alt="image" class="img-responsive">
                         <div class="tm-home-box-2-container">
                             <h3 class="margin-bottom-5">Mojito</h3>
-                            <div class="col-lg-3 col-md-3 col-sm-3"><img src="./../img/drink-weak.png" alt="drink-strong" class="tm-details-1"></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3"><img src="./../img/drink-weak.png" data-toggle="tooltip" title="Słaby drink" alt="drink-weak" class="tm-details-1"></div>
                             <div class="col-lg-9 col-md-9 col-sm-"><p class="tm-details-1 margin-bottom center">Robert Pudło</p></div>
                         </div>
                         <img src="./../img/rating.png" alt="image" class="tm-details-1">
                         <p class="tm-details-1 margin-bottom">88 ocen</p>
                         <p class="tm-date">12.02.2018</p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link col-sm-8 justify-content-start"><span
+                            <a href="#" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
                                     class="tm-home-box-2-description">Sprawdź</span></a>
-                            <a href="#" class="tm-home-box-2-link col-sm-4 justify-content-end"><i
-                                    class="fa fa-comment tm-home-box-2-icon border-left"></i></a>
+                            <a href="#" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
+                                    class="fa fa-comment tm-home-box-2-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -157,17 +181,17 @@
                         <img src="./../img/index-05.jpg" alt="image" class="img-responsive">
                         <div class="tm-home-box-2-container">
                             <h3 class="margin-bottom-5">Cuba libre</h3>
-                            <div class="col-lg-3 col-md-3 col-sm-3"><img src="./../img/drink-medium.png" alt="drink-strong" class="tm-details-1"></div>
+                            <div class="col-lg-3 col-md-3 col-sm-3"><img src="./../img/drink-medium.png" data-toggle="tooltip" title="Średni drink" alt="drink-medium" class="tm-details-1"></div>
                             <div class="col-lg-9 col-md-9 col-sm-"><p class="tm-details-1 margin-bottom center">Mateusz Kulik</p></div>
                         </div>
                         <img src="./../img/rating.png" alt="image" class="tm-details-1">
                         <p class="tm-details-1 margin-bottom">21 ocen</p>
                         <p class="tm-date">06.01.2018</p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link col-sm-8 justify-content-start"><span
+                            <a href="#" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
                                     class="tm-home-box-2-description">Sprawdź</span></a>
-                            <a href="#" class="tm-home-box-2-link col-sm-4 justify-content-end"><i
-                                    class="fa fa-comment tm-home-box-2-icon border-left"></i></a>
+                            <a href="#" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
+                                    class="fa fa-comment tm-home-box-2-icon"></i></a>
                         </div>
                     </div>
                 </div>
@@ -175,6 +199,7 @@
         </div>
     </div>
 </section>
+<div class="page-margin-bottom"></div>
 <footer class="tm-black-bg">
     <div class="container">
         <div class="row">

@@ -35,7 +35,9 @@
                     <li><a href="przepisy.html">Przepisy</a></li>
                     <li><a href="poczekalnia.html">Poczekalnia</a></li>
                     <li><a href="dodajPrzepis.html">Dodaj przepis</a></li>
-                    <li id="loginPara"><a href="#" class="active">Zaloguj</a></li>
+                </ul>
+                <ul class="navbar-right">
+                  <li><a href="#" class="active">Zaloguj</a></li>
                 </ul>
             </nav>
         </div>
@@ -56,30 +58,33 @@
                 </div>
             </div>
             <div class="row secondRow">
-                <div class="row">
-                    <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <form action="./../index.html" id="loginForm">
                             <div class="form-group">
                                 <label for="username">Nazwa użytkownika:</label>
-                                <input type="text" class="form-control input-sm" id="username" required="true" placeholder="Login">
+                                <input type="text" class="form-control" id="username" required="true" placeholder="Login">
                             </div>
                             <div class="form-group">
                                 <label for="password">Hasło:</label>
-                                <input type="password" class="form-control input-sm" id="password" required="true" placeholder="Hasło">
+                                <input type="password" class="form-control" id="password" required="true" placeholder="Hasło">
                             </div>
-                            <div class="form-group">
-                                <button class="btn btn-primary" type="submit" style="float: right;">Zaloguj</button>
+                            <div class="row">
+                                <div class="form-group">
+                                    <button class="btn tm-submit-btn" type="submit" style="float: right;">Zaloguj</button>
+                                </div>
                             </div>
-                        </form>
-                        <form class="form-inline" action="rejestracja.html" id="register">
-                            <button class="btn btn-primary">Rejestracja</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <a class="btn btn-link" href="rejestracja.html">Rejestracja</a>
+                                    </div>
+                                </div>
+                          </form>
+                  </div>
+              </div>
+          </div>
+      </div>
 </section>
+<div class="page-margin-bottom"></div>
 <footer class="tm-black-bg">
     <div class="container">
         <div class="row">
