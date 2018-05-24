@@ -69,6 +69,7 @@
                             <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="tequila">Tequila</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="tequila"></div></div>
                             <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="whisky">Whisky</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="whisky"></div></div>
                             <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="vodka">Wódka</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="vodka"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><input type="text" class="form-control" id="otherAddonlName" placeholder="Inny"></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="otherAddon"></div></div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-offset-2">
                           <br /><h3>Napój</h3><br />
@@ -78,6 +79,7 @@
                             <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="orange">Sok pomarańczowy</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="orange"></div></div>
                             <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="cranberry">Sok żurawinowy</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="cranberry"></div></div>
                             <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="tonic">Tonik</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="tonic"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><input type="text" class="form-control" id="otherAddonlName" placeholder="Inny"></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="otherAddon"></div></div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-offset-2">
                           <br /><h3>Dodatki</h3><br />
@@ -87,16 +89,24 @@
                             <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="pineappe">Ananas</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="pineapple"></div></div>
                             <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="strawberry">Truskawki</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="strawberry"></div></div>
                             <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><label for="cinamon">Cynamon</label></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="cinamon"></div></div>
+                            <div class="row"><div class="col-8 col-md-8 col-sm-8 col-xs-8"><input type="text" class="form-control" id="otherAddonlName" placeholder="Inny"></div><div class="col-4 col-md-4 col-sm-4 col-xs-4"><input type="checkbox" id="otherAddon"></div></div>
                         </div>
                     </div>
                     <div class="row secondRow">
-                      <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6 col-md-6 col-sm-6">
-                        <a href="./wynikiWyszukiwania.html"><button type="button" class="btn btn-block tm-submit-btn">Wyszukaj</button></a>
+                        <center>
+                            <div class="row">
+                                <div class="col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-lg-4 col-md-4 col-sm-4">
+                                    <a href="./wynikiWyszukiwania.html"><button type="button" class="btn btn-block tm-submit-btn">Wyszukaj</button></a>
+                                </div>
+                            </div>
+                        </center>
+                        <br />
+                        <center>
+                      <div class="btn-group">
+                              <a href="./wynikiWyszukiwania.html"><button type="button" class="btn tm-yellow-btn">Pokaż wszystkie</button></a>
+                              <a href="./przepisy.html"><button type="button" class="btn tm-yellow-btn float-right">Wyszukaj według nazwy</button></a>
                       </div>
-                      <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-6 col-md-6 col-sm-6">
-                        <a href="./wynikiWyszukiwania.html"><button type="button" class="btn tm-yellow-btn">Pokaż wszystkie</button></a>
-                        <a href="./przepisy.html"><button type="button" class="btn tm-yellow-btn">Wyszukaj według nazwy</button></a>
-                      </div>
+                        </center>
                     </div>
               </div>
             </div>
@@ -131,9 +141,9 @@
                         <p class="tm-details-1 margin-bottom">95 ocen</p>
                         <p class="tm-date">25.04.2018</p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
+                            <a href="./pojedynczyPrzepis.html" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
                                     class="tm-home-box-2-description">Sprawdź</span></a>
-                            <a href="#" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
+                            <a href="./pojedynczyPrzepis.html#commentsDiv" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
                                     class="fa fa-comment tm-home-box-2-icon"></i></a>
                         </div>
                     </div>
@@ -150,9 +160,9 @@
                         <p class="tm-details-1 margin-bottom">5 ocen</p>
                         <p class="tm-date">02.05.2018</p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
+                            <a href="./pojedynczyPrzepis.html" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
                                     class="tm-home-box-2-description">Sprawdź</span></a>
-                            <a href="#" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
+                            <a href="./pojedynczyPrzepis.html#commentsDiv" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
                                     class="fa fa-comment tm-home-box-2-icon"></i></a>
                         </div>
                     </div>
@@ -169,9 +179,9 @@
                         <p class="tm-details-1 margin-bottom">88 ocen</p>
                         <p class="tm-date">12.02.2018</p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
+                            <a href="./pojedynczyPrzepis.html" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
                                     class="tm-home-box-2-description">Sprawdź</span></a>
-                            <a href="#" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
+                            <a href="./pojedynczyPrzepis.html#commentsDiv" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
                                     class="fa fa-comment tm-home-box-2-icon"></i></a>
                         </div>
                     </div>
@@ -188,9 +198,9 @@
                         <p class="tm-details-1 margin-bottom">21 ocen</p>
                         <p class="tm-date">06.01.2018</p>
                         <div class="tm-home-box-2-container">
-                            <a href="#" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
+                            <a href="./pojedynczyPrzepis.html" class="tm-home-box-2-link col-lg-8 col-md-8 col-sm-8 col-xs-8"><span
                                     class="tm-home-box-2-description">Sprawdź</span></a>
-                            <a href="#" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
+                            <a href="./pojedynczyPrzepis.html#commentsDiv" class="tm-home-box-2-link col-lg-4 col-md-4 col-sm-4 col-xs-4"><i
                                     class="fa fa-comment tm-home-box-2-icon"></i></a>
                         </div>
                     </div>
