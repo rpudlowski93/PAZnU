@@ -268,8 +268,19 @@ hr { border-top: 1px solid #111010; }
 
 .yourStarsIcons {
     padding-right: 1%;
+    color: #999999;
+    font-size: 20px;
+}
+.yourStarsIcons:hover {
     color: #FCDD44;
-    font-size: 30px;
+    font-size: 25px;
+}
+
+.rank {
+  font-style: normal;
+}
+.rank:hover {
+  text-shadow: 1px 1px #FCDD44;
 }
 
 .yourRecHeader {
@@ -936,5 +947,7 @@ detailBox {
         font-size: 15px;
         font-weight: 600;
         text-transform: uppercase;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 }
